@@ -1,0 +1,113 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body{
+    font-family:'Poppins', sans-serif;
+    padding-top:80px;
+    background:#f5f7fb;
+}
+
+/* NAVBAR */
+.navbar{
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+.navbar-brand{
+    font-size:24px;
+    letter-spacing:1px;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url("BEACH.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+.hero h1{
+    text-shadow:0 4px 20px rgba(0,0,0,.6);
+}
+.hero p{
+    font-size:20px;
+}
+
+/* SECTION TITLES */
+.section-title{
+    text-align:center;
+    font-weight:700;
+    margin-bottom:15px;
+}
+.section-title::after{
+    content:"";
+    width:80px;
+    height:4px;
+    background:#ffc107;
+    display:block;
+    margin:10px auto 30px;
+    border-radius:10px;
+}
+
+/* CAROUSEL */
+.carousel img{
+    height:500px;
+    object-fit:cover;
+}
+
+/* CARDS */
+.card{
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.4s;
+}
+.card img{
+    height:230px;
+    object-fit:cover;
+}
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+
+/* ABOUT PAGE IMAGES */
+.about-img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* BUTTONS */
+.btn-warning{
+    border-radius:30px;
+    padding:8px 20px;
+    font-weight:600;
+}
+
+/* FORM */
+form{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+footer{
+    margin-top:60px;
+    background:#111;
+    color:white;
+    padding:25px;
+    text-align:center;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.hero{
+    height:70vh;
+}
+.carousel img{
+    height:250px;
+}
+}
